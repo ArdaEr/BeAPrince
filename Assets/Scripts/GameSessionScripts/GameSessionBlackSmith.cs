@@ -13,7 +13,7 @@ public class GameSessionBlackSmith : MonoBehaviour
 
     void Awake() 
     {
-        int numGameSessions = FindObjectsOfType<GameSessionFarmer>().Length;
+        int numGameSessions = FindObjectsOfType<GameSessionBlackSmith>().Length;
         if(numGameSessions > 1)
         {
             Destroy(gameObject);
