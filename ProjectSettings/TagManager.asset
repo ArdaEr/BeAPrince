@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Farmer
+  - Enemies
+  - Hazards
+  - Water
+  - Ground
+  - Interectibles
+  - LootBox
+  - Blacksmith
+  - Kingdom
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Player
+  - Hazards
+  - Enemies
+  - Interectibles
+  - LootBox
+  - Background
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1251297139
+    locked: 0
+  - name: Midground
+    uniqueID: 3823315851
+    locked: 0
+  - name: Platformer
+    uniqueID: 2823372305
+    locked: 0
+  - name: Water
+    uniqueID: 2544930511
+    locked: 0
+  - name: Hazards
+    uniqueID: 3335018075
+    locked: 0
+  - name: Interectibles
+    uniqueID: 2696311051
+    locked: 0
+  - name: Npc
+    uniqueID: 2945566237
+    locked: 0
+  - name: Enemies
+    uniqueID: 4288768029
+    locked: 0
+  - name: Player
+    uniqueID: 3026195523
+    locked: 0
