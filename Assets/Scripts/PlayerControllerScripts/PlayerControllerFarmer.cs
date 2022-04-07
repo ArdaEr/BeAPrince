@@ -3,21 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerControllerFarmer : MonoBehaviour
 {
     [SerializeField] float speed = 6f;
     [SerializeField] float jumpSpeed = 8f;
     [SerializeField] float secondJump = 2f;
     [SerializeField] float deathJump = 11f;
     [SerializeField] float deathTiming = 0.4f;
-    [SerializeField] float dashPower = 20f;
-    [SerializeField] float dashingTime = 0.5f;
-    [SerializeField] float dashingCoolDown = 1f;
     [SerializeField] ParticleSystem _deathEffect;
     [SerializeField] ParticleSystem _jumpEffect;
-    [SerializeField] TrailRenderer _tr;
 
-    Vector2 dashInput;
+
     Vector2 moveInput;
     Rigidbody2D _rigid;
     Animator _anim;
@@ -26,8 +22,7 @@ public class PlayerController : MonoBehaviour
     BoxCollider2D _feetCollider;
     GameSessionFarmer _session;
 
-    bool canDash = true;
-    bool isDashing;
+
     int jumpCounter = 0;
     bool isAlive = true;
     float gravityScaleAtStart;
@@ -49,7 +44,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if(!isAlive){return;}
-        if(isDashing){return;}
         Run();
         Die();
         FlipSprite();
@@ -80,15 +74,6 @@ public class PlayerController : MonoBehaviour
             JumpEffect();
             jumpCounter = 0;
         }
-    }
-    void OnDash(InputValue value)
-    {   
-        if(!isAlive){return;}
-        if(value.isPressed && canDash && FindObjectOfType<GameSessionBlackSmith>().isDash == true)
-        {
-            StartCoroutine(Dash());
-        }
-
     }
     void Run()
     {
@@ -126,22 +111,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator Dash()
-    {
-        canDash = false;
-        isDashing = true;
-        _rigid.gravityScale = 0;
-        _rigid.velocity = new Vector2(transform.localScale.x * dashPower, 0f);
-        _tr.emitting = true;
-        yield return new WaitForSeconds(dashingTime);
-        _tr.emitting = false;
-        _rigid.gravityScale = gravityScaleAtStart;
-        isDashing = false;
-        yield return new WaitForSeconds(dashingCoolDown);
-        canDash = true;
-
-        
-    }
 
     
     void DeathEffect()
@@ -153,7 +122,4 @@ public class PlayerController : MonoBehaviour
     _jumpEffect.Play();
     }
 
-
-
 }
-

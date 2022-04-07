@@ -13,7 +13,7 @@ public class CoinPickUp : MonoBehaviour
         if(other.tag == "Player" && !wasCollected)
         {
             wasCollected = true;
-            FindObjectOfType<GameSessionFarmer>().TakeCoin(pointsForCoin);
+            FindObjectOfType<GameSessionBlackSmith>().TakeCoin(pointsForCoin);
             Destroy(gameObject);
             AudioSource.PlayClipAtPoint(_audio, Camera.main.transform.position);
         }

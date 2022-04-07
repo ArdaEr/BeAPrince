@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameSessionBlackSmith : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
-    [SerializeField] int score = 0;
+    public int score = 0;
     PlayerController _player;
+    [SerializeField] TextMeshProUGUI _scoreT;
     public bool isBlacksmithQuest = false;
-    public bool isDash = false;
 
     void Awake() 
     {
@@ -22,6 +23,9 @@ public class GameSessionBlackSmith : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
+    }
+    private void Start() {
+        _scoreT.text = score.ToString();
     }
 
     public void ProcessPlayerDeath()
@@ -38,11 +42,12 @@ public class GameSessionBlackSmith : MonoBehaviour
     public void TakeCoin(int pointsToAdd)
     {
         score += pointsToAdd;
+        _scoreT.text = score.ToString();
     }
     void ResetGameSession()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        //FindObjectOfType<ScenePersist>().ScenePersistDeath();
+        FindObjectOfType<ScenePersist>().ScenePersistDeath();
         SceneManager.LoadScene(currentSceneIndex);
         Destroy(gameObject);
     }

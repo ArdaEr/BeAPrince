@@ -7,7 +7,6 @@ public class BlacksmithLevel : MonoBehaviour
 {
     private void OnEnable() 
     {
-        FindObjectOfType<GameSessionBlackSmith>().isDash = true;
         SceneManager.LoadScene("BlacksmithLevel");
     }
 }

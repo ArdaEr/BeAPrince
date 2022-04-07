@@ -8,7 +8,8 @@ using TMPro;
 public class GameSessionFarmer : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
-    [SerializeField] int score = 0;
+    public int score = 0;
+    [SerializeField] TextMeshProUGUI _scoreT;
     PlayerController _player;
     public bool isFarmerQuest = false;
 
@@ -23,6 +24,9 @@ public class GameSessionFarmer : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
+    }
+    private void Start() {
+        _scoreT.text = score.ToString();
     }
 
     public void ProcessPlayerDeath()
@@ -39,11 +43,13 @@ public class GameSessionFarmer : MonoBehaviour
     public void TakeCoin(int pointsToAdd)
     {
         score += pointsToAdd;
+        _scoreT.text = score.ToString();
+
     }
     void ResetGameSession()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        //FindObjectOfType<ScenePersist>().ScenePersistDeath();
+        FindObjectOfType<ScenePersist>().ScenePersistDeath();
         SceneManager.LoadScene(currentSceneIndex);
         Destroy(gameObject);
     }
