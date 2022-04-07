@@ -29,13 +29,6 @@ public class NextLevel : MonoBehaviour
         }
         
     }
-    private void OnTriggerExit2D(Collider2D c)
-    {
-        if (c.gameObject.tag == "Player")
-        {
-            
-        }
-    }
     IEnumerator LoadNextLevel()
     {  
         yield return new WaitForSecondsRealtime(LevelLoadDelay);
