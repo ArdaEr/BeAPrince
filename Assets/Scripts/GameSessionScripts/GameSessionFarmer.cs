@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 
 public class GameSessionFarmer : MonoBehaviour
@@ -12,6 +13,9 @@ public class GameSessionFarmer : MonoBehaviour
     [SerializeField] TextMeshProUGUI _scoreT;
     PlayerController _player;
     public bool isFarmerQuest = false;
+
+    [SerializeField] public Image[] hearts;
+    [SerializeField] public Sprite fullheart;
 
     void Awake() 
     {
@@ -62,4 +66,18 @@ public class GameSessionFarmer : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex);
     }
 
+    private void Update()
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < playerLives)
+            {
+                hearts[i].enabled = true;
+            }
+            else
+            {
+                hearts[i].enabled = false;
+            }
+        }
+    }
 }
