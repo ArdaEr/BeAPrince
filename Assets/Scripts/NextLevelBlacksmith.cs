@@ -15,7 +15,7 @@ public class NextLevelBlacksmith : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(FindObjectOfType<GameSessionBlackSmith>().score >= 8 )
+        if(FindObjectOfType<GameSessionBlackSmith>().score == 8 )
             {
                 FindObjectOfType<GameSessionBlackSmith>().isBlacksmithQuest = true;
                 _anim.SetBool("Open", true);
@@ -29,7 +29,6 @@ public class NextLevelBlacksmith : MonoBehaviour
     IEnumerator LoadNextLevel()
     {  
         yield return new WaitForSecondsRealtime(LevelLoadDelay);
-        FindObjectOfType<ScenePersist>().ScenePersistDeath();
         SceneManager.LoadScene("WakeUpScene");
     }
 }

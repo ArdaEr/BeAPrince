@@ -3,21 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-using UnityEngine.UI;
 
 public class GameSessionBlackSmith : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
-    [SerializeField] public Image[] hearts;
-    [SerializeField] public Sprite fullheart; 
-    [SerializeField] TextMeshProUGUI _scoreT;
-
-    PlayerController _player;
-
-    public bool isBlacksmithQuest = false;
     public int score = 0;
-
-
+    PlayerController _player;
+    [SerializeField] TextMeshProUGUI _scoreT;
+    public bool isBlacksmithQuest = false;
 
     void Awake() 
     {
@@ -31,8 +24,7 @@ public class GameSessionBlackSmith : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-    private void Start() 
-    {
+    private void Start() {
         _scoreT.text = score.ToString();
     }
 
@@ -63,17 +55,7 @@ public class GameSessionBlackSmith : MonoBehaviour
     void TakeLife()
     {
         playerLives--;
-        for (int i = 0; i < hearts.Length; i++)
-        {
-            if (i < playerLives)
-            {
-                hearts[i].enabled = true;
-            }
-            else
-            {
-                hearts[i].enabled = false;
-            }
-        }
+        score = 0;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
     }

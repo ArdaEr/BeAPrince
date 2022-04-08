@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/HouseScene.unity
-    guid: 114dfd62a6971954c97c88f4f2eb0848
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/WakeUpScene.unity
     guid: 737c4e68bcbc25e478755808c111cf26
@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/BlacksmithLevel.unity
     guid: ce50c43a85a69d54397a9e82e3a12457
   - enabled: 1
-    path: Assets/Scenes/CastleScene.unity
-    guid: ec00e31597b5fdb4eab97c7424886892
+    path: Assets/Scenes/KingdomLevel.unity
+    guid: 705894e9de9f5da48bee5659778e9bed
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 1405551f03cddb24aafd21af5cbacbc7, type: 2}
