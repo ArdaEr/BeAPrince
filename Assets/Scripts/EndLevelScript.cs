@@ -33,7 +33,7 @@ public class EndLevelScript : MonoBehaviour
         
         yield return new WaitForSecondsRealtime(LevelLoadDelay);
         FindObjectOfType<ScenePersist>().ScenePersistDeath();
-        SceneManager.LoadScene("WakeUpScene");
+        SceneManager.LoadScene("FinalScene");
         
     }
 }
