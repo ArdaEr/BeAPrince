@@ -9,13 +9,16 @@ using UnityEngine.UI;
 public class GameSessionFarmer : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
-    public int score = 0;
-    [SerializeField] TextMeshProUGUI _scoreT;
-    PlayerController _player;
-    public bool isFarmerQuest = false;
-
     [SerializeField] public Image[] hearts;
     [SerializeField] public Sprite fullheart;
+    [SerializeField] TextMeshProUGUI _scoreT;
+
+    PlayerController _player;
+
+    public bool isFarmerQuest = false;
+    public int score = 0;
+
+
 
     void Awake() 
     {
@@ -29,10 +32,10 @@ public class GameSessionFarmer : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-    private void Start() {
+    private void Start() 
+    {
         _scoreT.text = score.ToString();
     }
-
     public void ProcessPlayerDeath()
     {
         if(playerLives > 1)
@@ -61,13 +64,6 @@ public class GameSessionFarmer : MonoBehaviour
     void TakeLife()
     {
         playerLives--;
-        score = 0;
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
-    }
-
-    private void Update()
-    {
         for (int i = 0; i < hearts.Length; i++)
         {
             if (i < playerLives)
@@ -79,5 +75,8 @@ public class GameSessionFarmer : MonoBehaviour
                 hearts[i].enabled = false;
             }
         }
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
+
 }

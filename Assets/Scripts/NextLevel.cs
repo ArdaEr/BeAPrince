@@ -16,7 +16,7 @@ public class NextLevel : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            if(FindObjectOfType<GameSessionFarmer>().score == 8 )
+            if(FindObjectOfType<GameSessionFarmer>().score >= 8 )
             {
                 FindObjectOfType<GameSessionFarmer>().isFarmerQuest = true;
                 _anim.SetBool("Open", true);
@@ -31,7 +31,10 @@ public class NextLevel : MonoBehaviour
     }
     IEnumerator LoadNextLevel()
     {  
+        
         yield return new WaitForSecondsRealtime(LevelLoadDelay);
+        FindObjectOfType<ScenePersist>().ScenePersistDeath();
         SceneManager.LoadScene("WakeUpScene");
+        
     }
 }
