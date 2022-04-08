@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour
             _sprite.color = new Color (255, 0 , 0 , 255);
             Invoke("DeathEffect", deathTiming);
             _anim.SetTrigger("isDead");
-            FindObjectOfType<GameSessionFarmer>().Invoke("ProcessPlayerDeath", 1f);
+            FindObjectOfType<GameSession>().Invoke("ProcessPlayerDeath", 1f);
             //AudioSource.PlayClipAtPoint(_audio, Camera.main.transform.position);
         }
     }
