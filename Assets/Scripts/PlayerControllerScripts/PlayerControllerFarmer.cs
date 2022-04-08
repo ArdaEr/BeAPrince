@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
+using UnityEngine.UI;
 
 public class PlayerControllerFarmer : MonoBehaviour
 {
@@ -39,7 +41,6 @@ public class PlayerControllerFarmer : MonoBehaviour
         _sprite = GetComponent<SpriteRenderer>();
         
         gravityScaleAtStart = _rigid.gravityScale;
-
     }
     void Update()
     {

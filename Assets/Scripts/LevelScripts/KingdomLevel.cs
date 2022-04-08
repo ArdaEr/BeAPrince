@@ -7,6 +7,6 @@ public class KingdomLevel : MonoBehaviour
 {
     private void OnEnable() 
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("CastleScene");
     }
 }

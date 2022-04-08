@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class KidDisable : MonoBehaviour
 {
-    [SerializeField] GameObject kid;
+    public PlayerInput kid;
     void OnEnable()
     {
-        kid.SetActive(false);
+        kid.enabled = false;
+    }
+    private void OnDisable() {
+        kid.enabled = true;
     }
 }
