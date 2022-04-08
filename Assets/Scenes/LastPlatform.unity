@@ -11950,7 +11950,7 @@ GameObject:
   - component: {fileID: 869294065}
   - component: {fileID: 869294067}
   - component: {fileID: 869294066}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: JumpableObject
   m_TagString: Tramboline
   m_Icon: {fileID: 0}
