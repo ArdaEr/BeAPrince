@@ -9,6 +9,7 @@ public class WakeUpLevel : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            FindObjectOfType<TimeLineBoo>().timeline = false;
             SceneManager.LoadScene("WakeUpScene");
             
         }       
