@@ -21,34 +21,34 @@ public class KidColliderController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D c)
     {
-        if (c.gameObject.tag == "Farmer" && FindObjectOfType<GameSessionFarmer>().isFarmerQuest == false)
+        if (c.gameObject.tag == "Farmer" && FindObjectOfType<H>().isFQO == false)
         {
             StartCoroutine(DisableInput15());
             director2.Play();
         }
-        else if(c.gameObject.tag == "Farmer" && FindObjectOfType<GameSessionFarmer>().isFarmerQuest == true)
+        else if(c.gameObject.tag == "Farmer" && FindObjectOfType<H>().isFQO == true)
         {
             StartCoroutine(DisableInput3());
             director3.Play();
         }
-        if (c.gameObject.tag == "Blacksmith" && FindObjectOfType<GameSessionBlackSmith>().isBlacksmithQuest == false)
+        if (c.gameObject.tag == "Blacksmith" && FindObjectOfType<QuestHolder>().isBS == false)
         {
             StartCoroutine(DisableInput15());
             director4.Play();
         }
-        else if(c.gameObject.tag == "Blacksmith" && FindObjectOfType<GameSessionBlackSmith>().isBlacksmithQuest == true)
+        else if(c.gameObject.tag == "Blacksmith" && FindObjectOfType<QuestHolder>().isBS == true)
         {
             StartCoroutine(DisableInput3());
             director5.Play();
         }
         if(c.gameObject.tag == "Kingdom")
         {
-            if(FindObjectOfType<GameSessionBlackSmith>().isBlacksmithQuest == false || FindObjectOfType<GameSessionFarmer>().isFarmerQuest == false)
+            if(FindObjectOfType<QuestHolder>().isBS == false || FindObjectOfType<H>().isFQO == false)
         {
             StartCoroutine(DisableInput5());
             director6.Play();
         }
-            else if(FindObjectOfType<GameSessionBlackSmith>().isBlacksmithQuest == true && FindObjectOfType<GameSessionFarmer>().isFarmerQuest == true)
+            else if(FindObjectOfType<QuestHolder>().isBS == true && FindObjectOfType<H>().isFQO == true)
             {
             StartCoroutine(DisableInput1());
             director7.Play();

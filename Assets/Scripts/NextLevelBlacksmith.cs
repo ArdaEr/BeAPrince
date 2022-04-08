@@ -18,6 +18,7 @@ public class NextLevelBlacksmith : MonoBehaviour
         if(FindObjectOfType<GameSessionBlackSmith>().score >= 8 )
             {
                 FindObjectOfType<GameSessionBlackSmith>().isBlacksmithQuest = true;
+                FindObjectOfType<QuestHolder>().isBS = true;
                 _anim.SetBool("Open", true);
                 StartCoroutine(LoadNextLevel());
             }

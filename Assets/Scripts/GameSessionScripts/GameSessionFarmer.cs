@@ -23,11 +23,11 @@ public class GameSessionFarmer : MonoBehaviour
     void Awake() 
     {
         int numGameSessions = FindObjectsOfType<GameSessionFarmer>().Length;
-        if(numGameSessions > 1)
+        if(numGameSessions > 1 )
         {
             Destroy(gameObject);
         }
-        else
+        else 
         {
             DontDestroyOnLoad(gameObject);
         }
@@ -56,7 +56,7 @@ public class GameSessionFarmer : MonoBehaviour
     void ResetGameSession()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        FindObjectOfType<ScenePersist>().ScenePersistDeath();
+        FindObjectOfType<ScenePersistFarmer>().ScenePersistDeath();
         SceneManager.LoadScene(currentSceneIndex);
         Destroy(gameObject);
     }
