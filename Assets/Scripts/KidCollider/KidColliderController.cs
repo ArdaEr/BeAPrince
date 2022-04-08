@@ -95,7 +95,7 @@ public class KidColliderController : MonoBehaviour
         IEnumerator DisableInput5()
     {
         playerInput.enabled = false;
-        yield return new WaitForSecondsRealtime(5);
+        yield return new WaitForSecondsRealtime(4);
         playerInput.enabled = true;
 
     }

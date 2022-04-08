@@ -27,7 +27,7 @@ public class KidColliderCastle : MonoBehaviour
         }
         if(c.gameObject.tag == "Table")
         { 
-            StartCoroutine(DisableInput3());
+            StartCoroutine(DisableInput4());
             director10.Play();
         }
     }
@@ -67,6 +67,13 @@ public class KidColliderCastle : MonoBehaviour
     {
         playerInput.enabled = false;
         yield return new WaitForSecondsRealtime(3);
+        playerInput.enabled = true;
+
+    }
+        IEnumerator DisableInput4()
+    {
+        playerInput.enabled = false;
+        yield return new WaitForSecondsRealtime(4);
         playerInput.enabled = true;
 
     }
