@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/UIScene.unity
+    guid: 501b0801753292d4eadd3b02de9ae174
+  - enabled: 1
     path: Assets/Scenes/HouseScene.unity
     guid: 114dfd62a6971954c97c88f4f2eb0848
   - enabled: 1
