@@ -3820,9 +3820,61 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 416626909}
     m_Modifications:
+    - target: {fileID: 8856954875874382107, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856954875874382107, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856954875874382107, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856954875911503778, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856954875911503778, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856954875911503778, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856954876933628846, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856954876933628846, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856954876933628846, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856954877614923066, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856954877614923066, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856954877614923066, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8856954877638224352, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
       propertyPath: m_Name
       value: Blacksmith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856954877638224352, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8856954877638224355, guid: 22ef152fb131b5e4aacc96288edc0a7d, type: 3}
       propertyPath: m_Pivot.x
@@ -37760,8 +37812,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1268771773
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: -2152389905226942697, guid: b9bf8cd5fdcb730438c1c24b2037afaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

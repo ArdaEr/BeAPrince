@@ -7360,6 +7360,58 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimelineCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5002964606693771363, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002964606693771363, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002964606693771363, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002964606724073178, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002964606724073178, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002964606724073178, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002964607849429718, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002964607849429718, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002964607849429718, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002964608151433368, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002964608241828930, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002964608241828930, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002964608241828930, guid: 568688de970307045af32f2688d5d3a3, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 568688de970307045af32f2688d5d3a3, type: 3}
 --- !u!1001 &4639894319851617561
