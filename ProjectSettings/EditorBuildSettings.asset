@@ -24,7 +24,13 @@ EditorBuildSettings:
     path: Assets/Scenes/CastleScene.unity
     guid: ec00e31597b5fdb4eab97c7424886892
   - enabled: 1
+    path: Assets/Scenes/LastPlatform.unity
+    guid: 98c70be79da787d4fa85052d72a46869
+  - enabled: 1
     path: Assets/Scenes/FinalScene.unity
     guid: ff053ded57d3e914b80422990c7b865a
+  - enabled: 1
+    path: Assets/Scenes/SecondVillageScene.unity
+    guid: eeaa678fd78846148bfa3b2010e724d0
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 1405551f03cddb24aafd21af5cbacbc7, type: 2}

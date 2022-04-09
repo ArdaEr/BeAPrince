@@ -1778,6 +1778,63 @@ Transform:
   m_Father: {fileID: 1389901318}
   m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &110467081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 110467083}
+  - component: {fileID: 110467082}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &110467082
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110467081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1439848, y: 0.7583201}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.28967476, y: 2.6702237}
+  m_EdgeRadius: 0
+--- !u!4 &110467083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110467081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.18, y: 2.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &112812875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2511,10 +2568,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Kral seni yan\u0131na \xE7a\u011F\u0131r\u0131yor."
+  m_text: Kral seni yanina cagiriyor
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -2341509489175055297, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2538,8 +2595,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2577,7 +2634,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.1804504, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &190337897
@@ -6353,7 +6410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 34.7, y: 132.91}
+  m_AnchoredPosition: {x: 34.7, y: 105.5}
   m_SizeDelta: {x: 440.8368, y: 96.431}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &605809215
@@ -6395,7 +6452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Aa prenses tabloda da \xE7ok g\xFCzel."
+  m_text: Aa prenses tabloda cok guzel
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
   m_sharedMaterial: {fileID: -2341509489175055297, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
@@ -6422,8 +6479,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6461,7 +6518,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.1804504, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &605809217
@@ -9947,8 +10004,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.1, y: 158.2}
-  m_SizeDelta: {x: 440.8368, y: 44.0603}
+  m_AnchoredPosition: {x: 58.123688, y: 143.2}
+  m_SizeDelta: {x: 478.8842, y: 44.0603}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &899284980
 Animator:
@@ -9989,11 +10046,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ben Ginger, ben sadece k\u0131z\u0131n\u0131zla oyun oynamak istemi\u015Ftim
-    \xE7ok can\u0131m s\u0131k\u0131l\u0131yor.\n"
+  m_text: 'Sadece elimden geldigince insanlara yardim ediyorum. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -2341509489175055297, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10017,8 +10073,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10056,7 +10112,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.1804504, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &899284982
@@ -11868,7 +11924,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 96.8, y: 78.6}
+  m_AnchoredPosition: {x: 45.5, y: 76.9}
   m_SizeDelta: {x: 463.5308, y: 147.056}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1089425865
@@ -11913,7 +11969,7 @@ MonoBehaviour:
   m_text: Bunu yapabilirim.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -2341509489175055297, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11937,8 +11993,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11976,7 +12032,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.1804504, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1089425867
@@ -12179,7 +12235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 46.047, y: 130.35}
+  m_AnchoredPosition: {x: 46.047, y: 91.4}
   m_SizeDelta: {x: 463.5308, y: 147.056}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1118081768
@@ -12221,11 +12277,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "K\u0131z\u0131mla herkes istedi\u011Fi gibi oynayamaz. Onunla oyun oynamak
-    istiyorsan bunun bir bedeli var.\n"
+  m_text: 'Mutevazi olsan da kizimla evlenmek icin bundan fazlasi gerek
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -2341509489175055297, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12249,8 +12306,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12288,7 +12345,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.1804504, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1118081770
@@ -13609,7 +13666,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000047684, y: 50.244}
+  m_AnchoredPosition: {x: -0.0000047684, y: 17}
   m_SizeDelta: {x: 188.993, y: 213.9582}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1218488431
@@ -13651,11 +13708,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Kral\u0131n k\u0131z\u0131yla oynamak isteyenlerin 20 alt\u0131nl\u0131k
-    hazinesi olmas\u0131 gerekli."
+  m_text: Kralin kiziyla evlenmek icin gereken sartlardan biri 15 altininin olmasi
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
+  m_sharedMaterial: {fileID: -2341509489175055297, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13679,8 +13735,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16217,7 +16273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 65.2, y: 106.72}
+  m_AnchoredPosition: {x: 34.7, y: 112.9}
   m_SizeDelta: {x: 440.8368, y: 96.431}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1394243049
@@ -16259,7 +16315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sen kimsin?
+  m_text: Demek herkesin bahsettigi Ginger sensin
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
   m_sharedMaterial: {fileID: -2341509489175055297, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
@@ -16286,8 +16342,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -17881,7 +17937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 46.047, y: 96.5}
+  m_AnchoredPosition: {x: 46.047, y: 92}
   m_SizeDelta: {x: 463.5308, y: 147.056}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1521671237
@@ -17923,10 +17979,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Onunla oynamak istiyorsan bana 20 alt\u0131n toplaman gerekiyor.\n"
+  m_text: 'Onunla evlenmek istiyorsan, belli sayida bir altina ihtiyacin var.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -2341509489175055297, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17950,8 +18008,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -17989,7 +18047,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.1804504, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1521671239
@@ -20658,8 +20716,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -229.88, y: 133.79}
-  m_SizeDelta: {x: 62.033, y: 62.033}
+  m_AnchoredPosition: {x: -236, y: 142}
+  m_SizeDelta: {x: 63, y: 63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1794011146
 MonoBehaviour:

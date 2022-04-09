@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] ParticleSystem _deathEffect;
     [SerializeField] ParticleSystem _jumpEffect;
     [SerializeField] TrailRenderer _tr;
+    [SerializeField] AudioClip audio;
 
     Vector2 moveInput;
     Rigidbody2D _rigid;
@@ -117,6 +118,7 @@ public class PlayerController : MonoBehaviour
             isAlive = false;
             _rigid.velocity += new Vector2(_rigid.velocity.x, deathJump);
             //GetComponent<PlayerInput>().enabled = false;
+            AudioSource.PlayClipAtPoint(audio, Camera.main.transform.position);
             _sprite.color = new Color (255, 0 , 0 , 255);
             Invoke("DeathEffect", deathTiming);
             _anim.SetTrigger("isDead");

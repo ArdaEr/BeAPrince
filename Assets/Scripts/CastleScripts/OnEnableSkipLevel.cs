@@ -13,9 +13,7 @@ public class OnEnableSkipLevel : MonoBehaviour
     IEnumerator LoadNextLevel()
     {
         yield return new WaitForSecondsRealtime(LevelLoadDelay);
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex; int nextSceneIndex = currentSceneIndex + 1;
-        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings) { nextSceneIndex = 0; }
-        //FindObjectOfType<ScenePersist>().ScenePersistDeath();
-        SceneManager.LoadScene(nextSceneIndex);
+         SceneManager.LoadScene("LastPlatform");
+
     }
 }

@@ -984,6 +984,7 @@ MonoBehaviour:
   dashingCoolDown: 1
   _deathEffect: {fileID: 288265823}
   _tr: {fileID: 246532955}
+  audio: {fileID: 8300000, guid: 6f71d4ae5d315fc44a3ba58c42c98913, type: 3}
 --- !u!4 &246532961 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2065135217973654485, guid: f2ae832c94850d5489cb761a7bee116d, type: 3}

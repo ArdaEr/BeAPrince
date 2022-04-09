@@ -12175,6 +12175,7 @@ MonoBehaviour:
   deathTiming: 0.4
   _deathEffect: {fileID: 2091626684}
   _jumpEffect: {fileID: 1249546510}
+  audio: {fileID: 8300000, guid: 6f71d4ae5d315fc44a3ba58c42c98913, type: 3}
 --- !u!1 &1958325701
 GameObject:
   m_ObjectHideFlags: 0

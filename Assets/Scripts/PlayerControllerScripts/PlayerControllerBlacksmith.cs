@@ -17,6 +17,7 @@ public class PlayerControllerBlacksmith : MonoBehaviour
     [SerializeField] float dashingCoolDown = 1f;
     [SerializeField] ParticleSystem _deathEffect;
     [SerializeField] TrailRenderer _tr;
+    [SerializeField] AudioClip audio;
 
 
     Vector2 moveInput;
@@ -107,6 +108,7 @@ public class PlayerControllerBlacksmith : MonoBehaviour
             isAlive = false;
             _rigid.velocity += new Vector2(_rigid.velocity.x, deathJump);
             //GetComponent<PlayerInput>().enabled = false;
+            AudioSource.PlayClipAtPoint(audio, Camera.main.transform.position);
             _sprite.color = new Color (255, 0 , 0 , 255);
             Invoke("DeathEffect", deathTiming);
             _anim.SetTrigger("isDead");

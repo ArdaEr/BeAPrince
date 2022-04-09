@@ -13,6 +13,11 @@ TagManager:
   - LootBox
   - Blacksmith
   - Kingdom
+  - King
+  - Table
+  - Painting
+  - Tramboline
+  - Enemy
   layers:
   - Default
   - TransparentFX
