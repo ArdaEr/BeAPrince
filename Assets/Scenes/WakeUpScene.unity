@@ -244,6 +244,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Lutfen, George amca her zaman yardim icin burdayim. Karsiliksiz da olur.
+    Sifre konusunda yardimci olabilirsen sevinirim.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
   m_sharedMaterial: {fileID: -2341509489175055297, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
@@ -1859,7 +1860,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &256713429
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18083,7 +18084,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Karsiliginda bir sey olmasa bile sana yardimci olacagim Salih amca merak
-    etme.
+    etme. Sifre konusunda yardimci olabilirsen sevinirim.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
   m_sharedMaterial: {fileID: -2341509489175055297, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}

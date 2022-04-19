@@ -29263,7 +29263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gidip onlarla goruseyim.
+  m_text: Onlar sayesinde sifreyi cozebilirim.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}
   m_sharedMaterial: {fileID: -2341509489175055297, guid: 80bf51536afcb334c8d2fcd7e9a087d0, type: 2}

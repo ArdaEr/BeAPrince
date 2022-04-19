@@ -130,11 +130,7 @@ public class PlayerControllerBlacksmith : MonoBehaviour
         isDashing = false;
         yield return new WaitForSeconds(dashingCoolDown);
         canDash = true;
-
-        
     }
-
-    
     void DeathEffect()
     {
     _deathEffect.Play();
