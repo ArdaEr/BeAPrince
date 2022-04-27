@@ -23,7 +23,7 @@ public class KidColliderController : MonoBehaviour
     {
         if (c.gameObject.tag == "Farmer" && FindObjectOfType<H>().isFQO == false)
         {
-            StartCoroutine(DisableInput15());
+            StartCoroutine(DisableInput18());
             director2.Play();
         }
         else if(c.gameObject.tag == "Farmer" && FindObjectOfType<H>().isFQO == true)
@@ -33,7 +33,7 @@ public class KidColliderController : MonoBehaviour
         }
         if (c.gameObject.tag == "Blacksmith" && FindObjectOfType<QuestHolder>().isBS == false)
         {
-            StartCoroutine(DisableInput15());
+            StartCoroutine(DisableInput17());
             director4.Play();
         }
         else if(c.gameObject.tag == "Blacksmith" && FindObjectOfType<QuestHolder>().isBS == true)
@@ -111,7 +111,18 @@ public class KidColliderController : MonoBehaviour
         yield return new WaitForSecondsRealtime(15);
         playerInput.enabled = true;
     }
-
+    IEnumerator DisableInput17()
+    {
+        playerInput.enabled = false;
+        yield return new WaitForSecondsRealtime(17);
+        playerInput.enabled = true;
+    }
+    IEnumerator DisableInput18()
+    {
+        playerInput.enabled = false;
+        yield return new WaitForSecondsRealtime(18);
+        playerInput.enabled = true;
+    }
 
 
 
