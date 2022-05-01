@@ -18,6 +18,7 @@ TagManager:
   - Painting
   - Tramboline
   - Enemy
+  - LeftWay
   layers:
   - Default
   - TransparentFX
